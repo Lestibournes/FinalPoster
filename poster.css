@@ -93,7 +93,7 @@ h3 {
 	width: 100%;
 }
 
-.section {
+.entry {
 	gap: var(--gap);
 	overflow: hidden;
 
@@ -105,10 +105,10 @@ h3 {
 	place-items: left;
 }
 
-.card {
+.label {
 	display: flex;
 	flex-direction: column;
-	gap: var(--gap);
+	/* gap: var(--gap); */
 
 	padding: var(--gap);
 	line-height: var(--line-height);
@@ -116,7 +116,7 @@ h3 {
 	background-color: var(--background-color);
 }
 
-.section > img {
+.entry > img {
 	max-width: 100%;
 	height: auto;
 }

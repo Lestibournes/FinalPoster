@@ -1,0 +1,39 @@
+:root {
+	--gap: 1.25rem;
+	--font-title: 'Rubik';
+	--font-body: 'David CLM';
+	--background-color: #cee5da;
+	--partition-color: #58a481;
+
+	--line-height: 1.5;
+}
+
+* {
+	direction: rtl;
+
+	box-sizing: border-box;
+	
+	margin: 0px;
+	padding: 0px;
+}
+
+.preview {
+	line-height: var(--line-height);
+	
+	width: 220px;
+	height: 133px;
+	
+	padding: var(--gap);
+	
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap);
+	
+	place-content: center;
+	text-align: center;
+	
+	font-size: 16px;
+	font-family: var(--font-title);
+
+	background-color: var(--background-color);
+}
