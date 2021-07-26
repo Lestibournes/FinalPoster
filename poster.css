@@ -108,7 +108,6 @@ h3 {
 .label {
 	display: flex;
 	flex-direction: column;
-	/* gap: var(--gap); */
 
 	padding: var(--gap);
 	line-height: var(--line-height);
@@ -134,9 +133,37 @@ li {
 	content: '✓'
 }
 
+.diagram {
+	background-image: url("System.png");
+	height: 217.05px;
+	grid-template-columns: 1fr;
+}
+
+.legend {
+	width: calc((100% - var(--gap) * 1.5) / 2);
+	place-self: end;
+	background-color: var(--background-color);
+	padding: 0.5em;
+}
+
+.legend li::marker {
+	content: '•';
+	font-size: 1em;
+}
+
 .credits {
 	background-color: var(--background-color);
 	text-align: end;
-	font-size: 0.75em;
-	padding: 0.25em;
+	padding: 0.375em var(--gap) 0.375em var(--gap);
+
+	display: flex;
+	flex-direction: row;
+}
+
+.credits .page-column {
+	column-gap: unset;
+}
+
+.credits .page-column:first-child {
+	width: 100%;
 }

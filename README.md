@@ -13,3 +13,8 @@ On some browsers the screenshot will have double the resolution. To get the corr
 The Project this poster was made for is the Computerized Secretary for Private Doctors, which aims to provide appointment setting, appointment management, and other clinic services to private doctors. It can be found here:
 
 https://github.com/Lestibournes/Computerized-Secretary-for-Doctors
+
+## Copyright
+This page uses Firebase brand logo and product logos. Those belong to Google.
+It also uses free icons from Font Awesome under the Creative Commons Attribution 4.0. For the Font Awesome license, see here:
+https://fontawesome.com/license
