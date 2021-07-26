@@ -1,5 +1,5 @@
 :root {
-	--gap: 1.25rem;
+	--gap: 1.25em;
 	--font-title: 'Rubik';
 	--font-body: 'David CLM';
 	--background-color: #cee5da;
@@ -15,30 +15,30 @@
 	
 	margin: 0px;
 	padding: 0px;
-	
-	font-size: 16px;
-	font-family: var(--font-body);
 }
 
 h1 {
 	font-family: var(--font-title);
-	font-size: 1.75rem;
+	font-size: 1.75em;
 	font-weight: bold;
 }
 
 h2 {
 	font-family: var(--font-title);
-	font-size: 1.5rem;
+	font-size: 1.5em;
 	font-weight: 500;
 }
 
 h3 {
 	font-family: var(--font-title);
-	font-size: 1.25rem;
+	font-size: 1.25em;
 	font-weight: bold;
 }
 
 .poster {
+	font-size: 16px;
+	font-family: var(--font-body);
+
 	width: 1192px;
 	height: 561px;
 
@@ -73,7 +73,7 @@ h3 {
 }
 
 .page-logo {
-	max-height: calc(3.5rem + var(--gap));
+	max-height: calc(3.5em + var(--gap));
 	width: auto;
 	grid-area: logo;
 }
@@ -123,13 +123,20 @@ h3 {
 
 li {
 	line-height: var(--line-height);
-	padding-right: 0.5rem;
-	margin-right: 1rem;
+	padding-right: 0.5em;
+	margin-right: 1em;
 }
 
 ::marker {
-	font-size: 1.5rem;
+	font-size: 1.5em;
 	font-weight: 900;
 	line-height: 0;
 	content: '✓'
+}
+
+.credits {
+	background-color: var(--background-color);
+	text-align: end;
+	font-size: 0.75em;
+	padding: 0.25em;
 }
