@@ -1,0 +1,135 @@
+:root {
+	--gap: 1.25rem;
+	--font-title: 'Rubik';
+	--font-body: 'David CLM';
+	--background-color: #cee5da;
+	--partition-color: #58a481;
+
+	--line-height: 1.5;
+}
+
+* {
+	direction: rtl;
+
+	box-sizing: border-box;
+	
+	margin: 0px;
+	padding: 0px;
+	
+	font-size: 16px;
+	font-family: var(--font-body);
+}
+
+h1 {
+	font-family: var(--font-title);
+	font-size: 1.75rem;
+	font-weight: bold;
+}
+
+h2 {
+	font-family: var(--font-title);
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+h3 {
+	font-family: var(--font-title);
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+.poster {
+	width: 1192px;
+	height: 561px;
+
+	display: flex;
+	flex-direction: row;
+	gap: var(--gap);
+
+	background-color: var(--partition-color);
+}
+
+.page {
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap);
+	padding: var(--gap);
+	width: calc((100% - 15px) / 2);
+	height: inherit;
+	background-color: white;
+}
+
+.page-header {
+	display: grid;
+	grid-template-areas:
+	'logo dept'
+	'logo title';
+	
+	grid-template-rows: min-content;
+	grid-template-columns: min-content auto;
+	gap: var(--gap);
+
+	font-family: var(--font-title);
+}
+
+.page-logo {
+	max-height: calc(3.5rem + var(--gap));
+	width: auto;
+	grid-area: logo;
+}
+
+.page-author {
+	padding: var(--gap);
+	background-color: var(--background-color);
+}
+
+.page-column {
+	display: grid;
+	grid-template-columns: max-content max-content;
+	column-gap: var(--gap);
+}
+
+.page-author > :first-child{
+	width: 100%;
+}
+
+.section {
+	gap: var(--gap);
+	overflow: hidden;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	place-content: left;
+	place-self: left;
+	place-items: left;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap);
+
+	padding: var(--gap);
+	line-height: var(--line-height);
+	
+	background-color: var(--background-color);
+}
+
+.section > img {
+	max-width: 100%;
+	height: auto;
+}
+
+li {
+	line-height: var(--line-height);
+	padding-right: 0.5rem;
+	margin-right: 1rem;
+}
+
+::marker {
+	font-size: 1.5rem;
+	font-weight: 900;
+	line-height: 0;
+	content: '✓'
+}
