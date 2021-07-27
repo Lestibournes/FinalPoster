@@ -135,6 +135,7 @@ li {
 
 .diagram {
 	background-image: url("System.png");
+	background-size: 100% auto;
 	height: 217.05px;
 	grid-template-columns: 1fr;
 }

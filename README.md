@@ -16,5 +16,7 @@ https://github.com/Lestibournes/Computerized-Secretary-for-Doctors
 
 ## Copyright
 This page uses Firebase brand logo and product logos. Those belong to Google.
+
 It also uses free icons from Font Awesome under the Creative Commons Attribution 4.0. For the Font Awesome license, see here:
+
 https://fontawesome.com/license
